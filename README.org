@@ -1,0 +1,18 @@
+#+TITLE: Readme
+
+* Getting started
+First clone this repo and `c2hs` into the same directory, for example:
+#+begin_example
+> mkdir c2hstest
+> cd c2hstest
+> git clone https://github.com/deech/alignattributes
+> git clone https://github.com/haskell/c2hs
+#+end_example
+
+Then run the test suite:
+#+begin_example
+> cd alignattributes
+> cabal test
+#+end_example
+
+And that's it! More docs will follow as needed but that should get you started ...

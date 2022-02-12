@@ -1,0 +1,17 @@
+cabal-version: 2.4
+name: alignmentattributes
+version: 0.1.0.0
+bug-reports: https://github.com/deech/alignmentattributes/issues
+data-files: README.org
+
+test-suite test-alignment-size
+  default-language: Haskell2010
+  type: exitcode-stdio-1.0
+  main-is: test.hs
+  includes: sodiumalignment.h
+  include-dirs: .
+  build-depends:
+    base >= 4.15 && < 4.17,
+    HUnit >= 1.6.2.0 && < 1.6.3
+  c-sources: sodiumalignment.c
+  build-tool-depends: c2hs:c2hs
